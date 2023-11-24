@@ -14,7 +14,19 @@ root = os.path.dirname(os.path.abspath(__file__))
 
 # my model
 def my_model(smiles_list):
-    return [MolWt(Chem.MolFromSmiles(smi)) for smi in smiles_list]
+    mdl1 = joblib.load(os.path.join(MODELPATH, "mic50_bin10_morgan.joblib"))
+    mdl2 = joblib.load(os.path.join(MODELPATH, "mic50_bin20_morgan.joblib"))
+    mdl3 = joblib.load(os.path.join(MODELPATH, "mic90_bin10_morgan.joblib"))
+    mdl4 = joblib.load(os.path.join(MODELPATH, "mic90_bin20_morgan.joblib"))
+    mdl5 = joblib.load(os.path.join(MODELPATH, "wcs_bin50_morgan.joblib"))
+
+    y_pred1 = mdl1.predict_proba(smiles_list)[:,1]
+    y_pred2 = mdl2.predict_proba(smiles_list)[:,1]
+    y_pred3 = mdl3.predict_proba(smiles_list)[:,1]
+    y_pred4 = mdl4.predict_proba(smiles_list)[:,1]
+    y_pred5 = mdl5.predict_proba(smiles_list)[:,1]
+
+    return y_pred1, y_pred2, y_pred3, y_pred4, y_pred5
 
 
 # read SMILES from .csv file, assuming one column with header
@@ -24,16 +36,11 @@ with open(input_file, "r") as f:
     smiles_list = [r[0] for r in reader]
 
 # run model
-outputs = my_model(smiles_list)
-
-#check input and output have the same lenght
-input_len = len(smiles_list)
-output_len = len(outputs)
-assert input_len == output_len
+output1, output2, output3, output4, output5  = my_model(smiles_list)
 
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["value"])  # header
-    for o in outputs:
-        writer.writerow([o])
+    writer.writerow(["MIC50_10uM", "MIC50_20uM", "MIC90_10uM", "MIC90_20uM", "WCS_50%"])  # header with column names
+    for o1, o2, o3,o4,o5 in zip(output1, output2, output3, output4, output5):
+        writer.writerow([o1, o2, o3, o4, o5])

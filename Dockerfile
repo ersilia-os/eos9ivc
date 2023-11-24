@@ -1,7 +1,8 @@
 FROM bentoml/model-server:0.11.0-py37
 MAINTAINER ersilia
 
-RUN pip install rdkit
+RUN pip install xgboost==1.7.5
+RUN pip install lazyqsar==0.3
 
 WORKDIR /repo
 COPY . /repo
