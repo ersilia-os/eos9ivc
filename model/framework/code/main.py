@@ -18,7 +18,7 @@ def my_model(smiles_list):
     mdl2 = joblib.load(os.path.join(MODELPATH, "mic50_bin20_morgan.joblib"))
     mdl3 = joblib.load(os.path.join(MODELPATH, "mic90_bin10_morgan.joblib"))
     mdl4 = joblib.load(os.path.join(MODELPATH, "mic90_bin20_morgan.joblib"))
-    mdl5 = joblib.load(os.path.join(MODELPATH, "wcs_bin50_morgan.joblib"))
+    mdl5 = joblib.load(os.path.join(MODELPATH, "mic50_bin20_morgan.joblib"))
 
     y_pred1 = mdl1.predict_proba(smiles_list)[:,1]
     y_pred2 = mdl2.predict_proba(smiles_list)[:,1]
