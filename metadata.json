@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos9ivc",
+    "Slug": "antitb-seattle",
+    "Status": "In progress",
+    "Title": "Antituberculosis activity prediction",
+    "Description": "Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Children's (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured i na single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researcher's guidance.",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,13 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "M.tuberculosis",
+        "Antimicrobial activity",
+        "MIC90",
+        "Tuberculosis"
+    ],
+    "Publication": "https://ersilia.io",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0"
 }
