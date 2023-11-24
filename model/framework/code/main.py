@@ -2,8 +2,7 @@
 import os
 import csv
 import sys
-from rdkit import Chem
-from rdkit.Chem.Descriptors import MolWt
+import joblib
 
 # parse arguments
 input_file = sys.argv[1]
