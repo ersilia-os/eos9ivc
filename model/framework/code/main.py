@@ -10,6 +10,7 @@ output_file = sys.argv[2]
 
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
+MODELPATH = os.path.join(root, "..", "..", "checkpoints")
 
 # my model
 def my_model(smiles_list):
