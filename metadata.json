@@ -26,7 +26,7 @@
         "MIC90",
         "Tuberculosis"
     ],
-    "Publication": "https://ersilia.io",
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/30650074/",
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
     "License": "GPL-3.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",

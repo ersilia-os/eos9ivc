@@ -19,7 +19,7 @@ Prediction of the activity of small molecules against Mycobacterium tuberculosis
 
 ## References
 
-* [Publication](https://ersilia.io)
+* [Publication](https://pubmed.ncbi.nlm.nih.gov/30650074/)
 * [Source Code](https://github.com/ersilia-os/lazy-qsar)
 * Ersilia contributor: [GemmaTuron](https://github.com/GemmaTuron)
 
@@ -30,7 +30,7 @@ Prediction of the activity of small molecules against Mycobacterium tuberculosis
 
 ## Citation
 
-If you use this model, please cite the [original authors](https://ersilia.io) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+If you use this model, please cite the [original authors](https://pubmed.ncbi.nlm.nih.gov/30650074/) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
 
 ## License
 
