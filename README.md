@@ -26,7 +26,7 @@ Prediction of the activity of small molecules against Mycobacterium tuberculosis
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos9ivc)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9ivc) (AMD64, ARM64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9ivc) (AMD64)
 
 ## Citation
 
