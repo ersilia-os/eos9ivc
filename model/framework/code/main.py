@@ -41,6 +41,6 @@ output1, output2, output3, output4, output5  = my_model(smiles_list)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["MIC50_10uM", "MIC50_20uM", "MIC90_10uM", "MIC90_20uM", "WCS_50%"])  # header with column names
+    writer.writerow(["mic50_10um", "mic50_20um", "mic90_10um", "mic90_20um", "wcs_50_percent"])
     for o1, o2, o3,o4,o5 in zip(output1, output2, output3, output4, output5):
         writer.writerow([o1, o2, o3, o4, o5])

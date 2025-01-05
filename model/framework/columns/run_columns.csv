@@ -1,0 +1,6 @@
+name,type,direction,description
+mic50_10um,float,high,Classification score for the minimum inhibitory concentration (MIC) of the compound that inhibits 50% of the Mtb population at 10um
+mic50_20um,float,high,Classification score for the minimum inhibitory concentration (MIC) of the compount that inhibits 50% of the Mtb population at 20um
+mic90_10um,float,high,Classification score for the minimum inhibitory concentration (MIC) of the compound that inhibits 90% of the Mtb population at 10um
+mic90_20um,float,high,Classification score for the minimum inhibitory concentration (MIC) of the compound that inhibits 90% of the Mtb population at 20um
+wcs_50_percent,float,high,Classification score for the whole cell screen (WCS) 50% inhibition concentration
