@@ -1,24 +1,28 @@
 {
     "Identifier": "eos9ivc",
-    "Slug": "antitb-seattle",
+    "Slug": "anti-mtb-seattle",
     "Status": "Ready",
     "Title": "Antituberculosis activity prediction",
-    "Description": "Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Children's (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured i na single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researcher's guidance.",
-    "Mode": "In-house",
-    "Task": [
-        "Classification"
-    ],
+    "Description": "Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Children's (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured in a single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researcher's guidance.\n",
+    "Source": "Local",
+    "Source Type": "Internal",
     "Input": [
         "Compound"
     ],
-    "Input Shape": "Single",
+    "Input Dimension": 1,
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
+    "Biomedical Area": [
+        "Tuberculosis"
+    ],
+    "Target Organism": [
+        "Mycobacterium tuberculosis"
+    ],
     "Output": [
         "Compound"
     ],
-    "Output Type": [
-        "Float"
-    ],
-    "Output Shape": "List",
+    "Output Dimension": 5,
+    "Output Consistency": "Fixed",
     "Interpretation": "Probability of inhibition of M.tb in vitro in the MIC50, MIC90 and whole cell assays at cut-offs 10 and 20 uM and 50%, respectively ",
     "Tag": [
         "M.tuberculosis",
@@ -27,11 +31,18 @@
         "Tuberculosis"
     ],
     "Publication": "https://pubmed.ncbi.nlm.nih.gov/30650074/",
+    "Publication Type": "Peer reviewed",
+    "Publication Year": 2019,
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
-    "License": "GPL-3.0",
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",
+    "License": "GPL-3.0-or-later",
+    "Contributor": "GemmaTuron",
+    "Incorporation Date": "2023-11-24",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9ivc",
     "Docker Architecture": [
         "AMD64"
+    ],
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",
+    "Deployment": [
+        "Local"
     ]
 }
