@@ -42,9 +42,13 @@
     "Incorporation Date": "2023-11-24",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9ivc",
-    "Docker Architecture": [
-        "AMD64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 1.0,
-    "Environment Size": 7433.0
+    "Environment Size": 7433.0,
+    "Image Size": 7495.41,
+    "Computational Performance 1": 36.16,
+    "Computational Performance 2": 26.08,
+    "Computational Performance 3": 25.99,
+    "Computational Performance 4": 121.57,
+    "Computational Performance 5": 554.41
 }
