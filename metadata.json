@@ -3,21 +3,18 @@
     "Slug": "anti-mtb-seattle",
     "Status": "Ready",
     "Title": "Antituberculosis activity prediction",
-    "Description": "Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Children's (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured in a single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researcher's guidance.\n",
+    "Description": "Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Childrens (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured in a single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researchers guidance.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "Internal",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "Tuberculosis"
-    ],
-    "Target Organism": [
-        "Mycobacterium tuberculosis"
-    ],
     "Output": [
         "Compound"
     ],
@@ -30,19 +27,24 @@
         "MIC90",
         "Tuberculosis"
     ],
-    "Publication": "https://pubmed.ncbi.nlm.nih.gov/30650074/",
+    "Biomedical Area": [
+        "Tuberculosis"
+    ],
+    "Target Organism": [
+        "Mycobacterium tuberculosis"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
+    "Publication": "https://pubmed.ncbi.nlm.nih.gov/30650074/",
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
     "License": "GPL-3.0-or-later",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-11-24",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9ivc",
     "Docker Architecture": [
         "AMD64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 1.0,
+    "Environment Size": 7520.0
 }
