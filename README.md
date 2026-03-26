@@ -25,14 +25,6 @@ This model was incorporated on 2023-11-24.Last packaged on 2025-11-21.
 - **Output Consistency:** `Fixed`
 - **Interpretation:** Probability of inhibition of M.tb in vitro in the MIC50, MIC90 and whole cell assays at cut-offs 10 uM and 70%, respectively 
 
-Below are the **Output Columns** of the model:
-| Name | Type | Direction | Description |
-|------|------|-----------|-------------|
-| wcs_70percent | float | high | Probability of Mtb growth inhibition at a whole cell screen (WCS) at 70% |
-| mic50_10um | float | high | Probability of Mtb growth inhibition at an MIC50 of 10 um |
-| mic90_10um | float | high | Probability of Mtb growth inhibition at an MIC90 of 10 um |
-
-
 ### Source and Deployment
 - **Source:** `Local`
 - **Source Type:** `Internal`
