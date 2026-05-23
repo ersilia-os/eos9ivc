@@ -14,7 +14,7 @@ This model was incorporated on 2023-11-24.Last packaged on 2026-03-30.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `Tuberculosis`
 - **Target Organism:** `Mycobacterium tuberculosis`
-- **Tags:** `M.tuberculosis`, `Antimicrobial activity`, `MIC90`, `Tuberculosis`
+- **Tags:** `Antimicrobial activity`, `MIC90`
 
 ### Input
 - **Input:** `Compound`
