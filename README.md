@@ -2,7 +2,7 @@
 
 Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Childrens (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured in a single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researchers guidance. The models have been trained using LazyQSAR and achieved an AUROC of >0.8 in a 3-fold crossvalidation
 
-This model was incorporated on 2023-11-24.Last packaged on 2026-05-23.
+This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
 
 ## Information
 ### Identifiers
@@ -37,18 +37,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ivc](https://hub.docker.com/r/ersiliaos/eos9ivc)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `7`
 - **Environment Size (Mb):** `5841`
-- **Image Size (Mb):** `2013.23`
+- **Image Size (Mb):** `5877.77`
 
 **Computational Performance (seconds):**
-- 10 inputs: `35.14`
-- 100 inputs: `29.97`
-- 10000 inputs: `687.77`
+- 10 inputs: `35.27`
+- 100 inputs: `39.28`
+- 10000 inputs: `886.25`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
