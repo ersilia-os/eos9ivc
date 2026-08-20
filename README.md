@@ -1,6 +1,6 @@
 # Antituberculosis activity prediction
 
-Prediction of the activity of small molecules against Mycobacterium tuberculosis. This model has been developed by Ersilia thanks to the data provided by the Seattle Childrens (Dr.  Tanya Parish research group). In vitro activity against M. tuberculosis was measured in a single point inhibition assay (10000 molecules) and selected compounds (259) were assayed in MIC50 and MIC90 assays. Cut-offs have been determined according to the researchers guidance. The models have been trained using LazyQSAR and achieved an AUROC of >0.8 in a 3-fold crossvalidation
+Predicts whether a compound stops Mycobacterium tuberculosis growing, reporting three related readouts from a whole-cell screen. Ollinger and colleagues at the Infectious Disease Research Institute developed the high-throughput assay behind the data, measuring growth inhibition directly in bacteria rather than against an isolated target. Whole-cell activity captures permeability and efflux alongside target engagement, but gives no indication of which target is being hit.
 
 This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
 ### Output
 - **Output Dimension:** `3`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibition of M.tb in vitro in the MIC50, MIC90 and whole cell assays at cut-offs 10 uM and 70%, respectively 
+- **Interpretation:** Probability of Mycobacterium tuberculosis inhibition in the MIC50, MIC90 and whole-cell assays.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
