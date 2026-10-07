@@ -1,6 +1,6 @@
 # Antituberculosis activity prediction
 
-Predicts whether a compound stops Mycobacterium tuberculosis growing, reporting three related readouts from a whole-cell screen. Ollinger and colleagues at the Infectious Disease Research Institute developed the high-throughput assay behind the data, measuring growth inhibition directly in bacteria rather than against an isolated target. Whole-cell activity captures permeability and efflux alongside target engagement, but gives no indication of which target is being hit.
+Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained the classifiers with LazyQSAR on data shared by Tanya Parish's group, where around 10,000 compounds went through the single-point whole-cell screen that Ollinger and colleagues describe and 259 were followed up in MIC50 and MIC90 assays; cut-offs were set on the researchers' advice and three-fold cross-validation gave AUROC above 0.8. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
 
 This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
 ### Output
 - **Output Dimension:** `3`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Mycobacterium tuberculosis inhibition in the MIC50, MIC90 and whole-cell assays.
+- **Interpretation:** Probability of Mycobacterium tuberculosis inhibition, at 70% whole-cell growth inhibition and at 10 micromolar MIC50 and MIC90.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
