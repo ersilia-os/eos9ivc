@@ -1,8 +1,9 @@
 # Antituberculosis activity prediction
 
-Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained the classifiers with LazyQSAR on data shared by Tanya Parish's group, where around 10,000 compounds went through the single-point whole-cell screen that Ollinger and colleagues describe and 259 were followed up in MIC50 and MIC90 assays; cut-offs were set on the researchers' advice and three-fold cross-validation gave AUROC above 0.8. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
+Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained the classifiers with LazyQSAR on data shared by Tanya Parishs group, where around 10,000 compounds went through the single-point whole-cell screen that Ollinger and colleagues describe and 259 were followed up in MIC50 and MIC90 assays; cut-offs were set on the researchers advice and three-fold cross-validation gave AUROC above 0.8. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
 
-This model was incorporated on 2023-11-24.Last packaged on 2026-08-07.
+This model was incorporated on 2023-11-24.
+Last packaged on 2026-08-07.
 
 ## Information
 ### Identifiers
@@ -39,6 +40,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ivc](https://hub.docker.com/r/ersiliaos/eos9ivc)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9ivc_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9ivc_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `7`
