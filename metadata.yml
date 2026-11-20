@@ -1,0 +1,58 @@
+Identifier: eos9ivc
+Slug: anti-mtb-seattle
+Status: Ready
+Title: Antituberculosis activity prediction
+Description: Predicts activity of small molecules against Mycobacterium tuberculosis across
+  three related readouts. Ersilia trained LazyQSAR classifiers on data shared by
+  Tanya Parish's group, 10,002 compounds in a single-point whole-cell screen
+  (active at 70% inhibition) and 259 followed up in MIC50 and MIC90 assays
+  (active at 10 uM). Five-fold out-of-fold validation gives AUROC 0.87, 0.87 and
+  0.84. Outputs are ranks against 50,000 drug-like molecules. Whole-cell
+  readouts fold in permeability and efflux as well as target engagement, and
+  point at no target.
+Deployment:
+  - Local
+Source: Local
+Source Type: Internal
+Task: Annotation
+Subtask: Activity prediction
+Input:
+  - Compound
+Input Dimension: 1
+Output:
+  - Score
+Output Dimension: 3
+Output Consistency: Fixed
+Interpretation: Rank of predicted Mycobacterium tuberculosis inhibition (70% whole-cell growth
+  inhibition; MIC50 and MIC90 at 10 uM) against 50,000 drug-like molecules; 0.65
+  is better than 99% of them.
+Tag:
+  - Antimicrobial activity
+  - MIC90
+Biomedical Area:
+  - Tuberculosis
+Target Organism:
+  - Mycobacterium tuberculosis
+Publication Type: Peer reviewed
+Publication Year: 2019
+Publication: https://doi.org/10.1371/journal.pone.0205479
+Source Code: https://github.com/ersilia-os/lazy-qsar
+License: GPL-3.0-or-later
+Contributor: GemmaTuron
+Incorporation Date: '2023-11-24'
+Last Packaging Date: '2026-08-07'
+Release: v2.1.1
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ivc.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos9ivc
+Docker Architecture:
+  - AMD64
+  - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos9ivc_v2.sif
+Model Size: 7.0
+Environment Size: 5841.0
+Image Size: 5877.77
+Computational Performance 1: 35.27
+Computational Performance 2: 33.69
+Computational Performance 3: 39.28
+Computational Performance 4: 189.5
+Computational Performance 5: 886.25

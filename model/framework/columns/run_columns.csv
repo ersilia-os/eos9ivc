@@ -1,4 +1,4 @@
 name,type,direction,description
-wcs_70percent,float,high,Probability of Mtb growth inhibition at a whole cell screen (WCS) at 70%
-mic50_10um,float,high,Probability of Mtb growth inhibition at an MIC50 of 10 um
-mic90_10um,float,high,Probability of Mtb growth inhibition at an MIC90 of 10 um
+wcs_70percent_rank,float,high,"Rank score of the compound's predicted Mycobacterium tuberculosis growth inhibition of at least 70% in a whole-cell screen, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
+mic50_10um_rank,float,high,"Rank score of the compound's predicted Mycobacterium tuberculosis inhibition at an IC50 cut-off of 10 uM, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
+mic90_10um_rank,float,high,"Rank score of the compound's predicted Mycobacterium tuberculosis inhibition at an IC90 cut-off of 10 uM, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65."
