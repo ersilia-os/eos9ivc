@@ -1,6 +1,6 @@
 # Antituberculosis activity prediction
 
-Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained LazyQSAR classifiers on data shared by Tanya Parish's group, 10,002 compounds in a single-point whole-cell screen (active at 70% inhibition) and 259 followed up in MIC50 and MIC90 assays (active at 10 uM). Five-fold out-of-fold validation gives AUROC 0.87, 0.87 and 0.84. Outputs are ranks against 50,000 drug-like molecules. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
+Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained LazyQSAR classifiers on data shared by Tanya Parishs group, 10,002 compounds in a single-point whole-cell screen (active at 70% inhibition) and 259 followed up in MIC50 and MIC90 assays (active at 10 uM). Five-fold out-of-fold validation gives AUROC 0.87, 0.87 and 0.84. Outputs are ranks against 50,000 drug-like molecules. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
 
 This model was incorporated on 2023-11-24.
 Last packaged on 2026-08-07.
@@ -43,8 +43,8 @@ Below are the **Output Columns** of the model:
 - **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9ivc_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9ivc_v2.sif)
 
 ### Resource Consumption
-- **Model Size (Mb):** `7`
-- **Environment Size (Mb):** `5841`
+- **Model Size (Mb):** `19`
+- **Environment Size (Mb):** `6954`
 - **Image Size (Mb):** `5877.77`
 
 **Computational Performance (seconds):**
