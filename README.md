@@ -1,6 +1,6 @@
 # Antituberculosis activity prediction
 
-Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained the classifiers with LazyQSAR on data shared by Tanya Parishs group, where around 10,000 compounds went through the single-point whole-cell screen that Ollinger and colleagues describe and 259 were followed up in MIC50 and MIC90 assays; cut-offs were set on the researchers advice and three-fold cross-validation gave AUROC above 0.8. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
+Predicts activity of small molecules against Mycobacterium tuberculosis across three related readouts. Ersilia trained LazyQSAR classifiers on data shared by Tanya Parish's group, 10,002 compounds in a single-point whole-cell screen (active at 70% inhibition) and 259 followed up in MIC50 and MIC90 assays (active at 10 uM). Five-fold out-of-fold validation gives AUROC 0.87, 0.87 and 0.84. Outputs are ranks against 50,000 drug-like molecules. Whole-cell readouts fold in permeability and efflux as well as target engagement, and point at no target.
 
 This model was incorporated on 2023-11-24.
 Last packaged on 2026-08-07.
@@ -24,14 +24,14 @@ Last packaged on 2026-08-07.
 ### Output
 - **Output Dimension:** `3`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of Mycobacterium tuberculosis inhibition, at 70% whole-cell growth inhibition and at 10 micromolar MIC50 and MIC90.
+- **Interpretation:** Rank of predicted Mycobacterium tuberculosis inhibition (70% whole-cell growth inhibition; MIC50 and MIC90 at 10 uM) against 50,000 drug-like molecules; 0.65 is better than 99% of them.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| wcs_70percent | float | high | Probability of Mtb growth inhibition at a whole cell screen (WCS) at 70% |
-| mic50_10um | float | high | Probability of Mtb growth inhibition at an MIC50 of 10 um |
-| mic90_10um | float | high | Probability of Mtb growth inhibition at an MIC90 of 10 um |
+| wcs_70percent_rank | float | high | Rank score of the compound's predicted Mycobacterium tuberculosis growth inhibition of at least 70% in a whole-cell screen, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| mic50_10um_rank | float | high | Rank score of the compound's predicted Mycobacterium tuberculosis inhibition at an IC50 cut-off of 10 uM, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
+| mic90_10um_rank | float | high | Rank score of the compound's predicted Mycobacterium tuberculosis inhibition at an IC90 cut-off of 10 uM, calibrated against a reference library of 50K drug-like molecules so that 0.65 is better than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
