@@ -2,14 +2,14 @@ Identifier: eos9ivc
 Slug: anti-mtb-seattle
 Status: Ready
 Title: Antituberculosis activity prediction
-Description: Predicts activity of small molecules against Mycobacterium tuberculosis across
-  three related readouts. Ersilia trained LazyQSAR classifiers on data shared by
-  Tanya Parish's group, 10,002 compounds in a single-point whole-cell screen
-  (active at 70% inhibition) and 259 followed up in MIC50 and MIC90 assays
-  (active at 10 uM). Five-fold out-of-fold validation gives AUROC 0.87, 0.87 and
-  0.84. Outputs are ranks against 50,000 drug-like molecules. Whole-cell
-  readouts fold in permeability and efflux as well as target engagement, and
-  point at no target.
+Description: Predicts activity of small molecules against Mycobacterium 
+  tuberculosis across three related readouts. Ersilia trained LazyQSAR 
+  classifiers on data shared by Tanya Parishs group, 10,002 compounds in a 
+  single-point whole-cell screen (active at 70% inhibition) and 259 followed up 
+  in MIC50 and MIC90 assays (active at 10 uM). Five-fold out-of-fold validation 
+  gives AUROC 0.87, 0.87 and 0.84. Outputs are ranks against 50,000 drug-like 
+  molecules. Whole-cell readouts fold in permeability and efflux as well as 
+  target engagement, and point at no target.
 Deployment:
   - Local
 Source: Local
@@ -23,9 +23,9 @@ Output:
   - Score
 Output Dimension: 3
 Output Consistency: Fixed
-Interpretation: Rank of predicted Mycobacterium tuberculosis inhibition (70% whole-cell growth
-  inhibition; MIC50 and MIC90 at 10 uM) against 50,000 drug-like molecules; 0.65
-  is better than 99% of them.
+Interpretation: Rank of predicted Mycobacterium tuberculosis inhibition (70% 
+  whole-cell growth inhibition; MIC50 and MIC90 at 10 uM) against 50,000 
+  drug-like molecules; 0.65 is better than 99% of them.
 Tag:
   - Antimicrobial activity
   - MIC90
